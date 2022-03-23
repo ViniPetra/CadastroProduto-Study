@@ -1,4 +1,7 @@
 # CadastroProduto-Study
+![image](https://user-images.githubusercontent.com/89108219/159700115-f163997e-4fad-48d1-a3f6-bc3e05bc3ca7.png)
+
+
 ===Portugês===
 Esse é um programa embrionário usando .NET framework.
 Seu propósito é deixar um usuário cadastrar um produto e deixar vê-los em outra janela.
