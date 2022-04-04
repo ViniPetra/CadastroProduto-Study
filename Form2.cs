@@ -16,6 +16,12 @@ namespace CadastroProduto_Study
         public Form2(Produto produto)
         {
             InitializeComponent();
+            lblProduto.Text = produto.ToString();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

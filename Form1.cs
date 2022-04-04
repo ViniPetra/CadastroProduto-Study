@@ -28,13 +28,18 @@ namespace CadastroProduto_Study
         {
             try
             {
-                Produto temp = new Produto(txtNome.Text, txtPreco.Text);
-                listaProdutos.Add(temp);
-                cbxProdutos.Items.Add(temp);
+                Produto produto = new Produto(
+                    txtNome.Text, 
+                    txtPreco.Text
+                    );
+
+                listaProdutos.Add(produto);
+                cbxProdutos.Items.Add(produto.Nome);
 
                 txtNome.Text = "";
                 txtPreco.Text = "";
-                MessageBox.Show("Produto adicionado com suvesso");
+
+                MessageBox.Show("Produto adicionado com sucesso");
             } 
             catch (Exception ex)
             {
@@ -45,6 +50,7 @@ namespace CadastroProduto_Study
         private void btnMostrar_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2(listaProdutos[cbxProdutos.SelectedIndex]);
+            form2.ShowDialog();
         }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.lblProduto = new System.Windows.Forms.Label();
+            this.lblProdutoDetalhado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblProduto
@@ -39,14 +40,24 @@
             this.lblProduto.Size = new System.Drawing.Size(0, 13);
             this.lblProduto.TabIndex = 0;
             // 
+            // lblProdutoDetalhado
+            // 
+            this.lblProdutoDetalhado.AutoSize = true;
+            this.lblProdutoDetalhado.Location = new System.Drawing.Point(54, 52);
+            this.lblProdutoDetalhado.Name = "lblProdutoDetalhado";
+            this.lblProdutoDetalhado.Size = new System.Drawing.Size(0, 13);
+            this.lblProdutoDetalhado.TabIndex = 1;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(217, 170);
+            this.Controls.Add(this.lblProdutoDetalhado);
             this.Controls.Add(this.lblProduto);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -55,5 +66,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblProduto;
+        private System.Windows.Forms.Label lblProdutoDetalhado;
     }
 }
