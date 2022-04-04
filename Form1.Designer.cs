@@ -40,7 +40,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 56);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 0;
@@ -49,7 +49,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 86);
+            this.label2.Location = new System.Drawing.Point(12, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 1;
@@ -57,21 +57,21 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(99, 56);
+            this.txtNome.Location = new System.Drawing.Point(54, 9);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(100, 20);
             this.txtNome.TabIndex = 2;
             // 
             // txtPreco
             // 
-            this.txtPreco.Location = new System.Drawing.Point(98, 83);
+            this.txtPreco.Location = new System.Drawing.Point(53, 36);
             this.txtPreco.Name = "txtPreco";
             this.txtPreco.Size = new System.Drawing.Size(100, 20);
             this.txtPreco.TabIndex = 3;
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(35, 138);
+            this.btnSalvar.Location = new System.Drawing.Point(169, 64);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 4;
@@ -82,14 +82,14 @@
             // cbxProdutos
             // 
             this.cbxProdutos.FormattingEnabled = true;
-            this.cbxProdutos.Location = new System.Drawing.Point(127, 138);
+            this.cbxProdutos.Location = new System.Drawing.Point(54, 95);
             this.cbxProdutos.Name = "cbxProdutos";
-            this.cbxProdutos.Size = new System.Drawing.Size(121, 21);
+            this.cbxProdutos.Size = new System.Drawing.Size(99, 21);
             this.cbxProdutos.TabIndex = 5;
             // 
             // btnMostrar
             // 
-            this.btnMostrar.Location = new System.Drawing.Point(98, 182);
+            this.btnMostrar.Location = new System.Drawing.Point(169, 93);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(75, 23);
             this.btnMostrar.TabIndex = 6;
@@ -99,9 +99,10 @@
             // 
             // Form1
             // 
+            this.AcceptButton = this.btnSalvar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(279, 259);
+            this.ClientSize = new System.Drawing.Size(279, 145);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.cbxProdutos);
             this.Controls.Add(this.btnSalvar);
@@ -110,7 +111,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Cadastro Produto";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

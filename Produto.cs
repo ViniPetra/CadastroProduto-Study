@@ -8,19 +8,19 @@ namespace CadastroProduto_Study
 {
     public class Produto
     {
-        public string nome { get; private set; }
-        public string preco { get; private set; }
+        public string Nome { get; private set; }
+        public string Preco { get; private set; }
 
         public Produto(string nome, string preco)
         {
-            this.nome = nome;
-            this.preco = preco;
+            Nome = nome;
+            Preco = preco;
         }
 
         public override string ToString()
         {
-            return "Nome: " + nome + "\n" +
-                "Preço: " + preco + "\n";
+            return "Nome: " + Nome + "\n" +
+                "Preço: " + Preco + "\n";
         }
     }
 }
